@@ -1,0 +1,15 @@
+.paginacion{
+margin-top: 2rem;
+display: flex;
+justify-content: space-between;
+  button{
+    background-color: $azul;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: $blanco;
+    border: none;
+    &.ocultar{
+      visibility: hidden;
+    }
+  }
+}

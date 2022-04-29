@@ -1,0 +1,14 @@
+.tabs{
+  @include grid(3,2rem);
+  button{
+    border: none;
+    padding: 1rem;
+    background-color: $blanco;
+    text-transform: uppercase;
+    font-weight: $bold;
+    cursor: pointer;
+    &.activo{
+      background-color: $azul;
+    }
+  }
+}

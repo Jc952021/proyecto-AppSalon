@@ -1,0 +1,40 @@
+body {
+  background-color: $negro;
+}
+
+.contenedor-estetica {
+  height: 100vh;
+
+  @include grid(2, $separacion);
+  .imagen {
+    background-image: url("../img/1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+}
+.app{
+  padding-top: 5rem;
+  width: 95%;
+  margin: 0 auto;
+  
+  .seccion{
+    margin-top: 2rem;
+    display: none;
+    &.mostrar{
+      display: block;
+    }
+  }
+}
+
+@include tablet {
+ .imagen{
+   height: 40rem;
+ }
+ .contenedor-estetica{
+   @include grid(1,1rem);
+ }
+ .app{
+   padding-top: 0;
+ }
+}

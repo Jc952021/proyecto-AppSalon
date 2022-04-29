@@ -1,0 +1,30 @@
+.formulario{
+margin-bottom: 6rem;
+
+  .campo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    label{
+      width: 10rem;
+      color: $blanco;
+    }
+    input{
+      flex: 1;
+      border-radius: 1rem;
+      border: none;
+      outline: none;
+      padding: 1rem 2rem;
+    }
+  }
+  .alerta{
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+    color: $blanco;
+    &.error__nombre{
+      background-color: red;
+    }
+  }
+}
